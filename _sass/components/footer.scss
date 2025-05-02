@@ -1,0 +1,60 @@
+.footer {
+  padding: 3rem 0;
+  margin-top: 3rem;
+  border-top: 0.094rem solid #ddd;
+
+  @media (min-width: $mediumbp) {
+    padding: 4rem 0;
+  }
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  @media (min-width: $mediumbp) {
+    flex-direction: row;
+    gap: 10rem;
+  }
+
+  &__column {
+    &--copy {
+      flex: 1;
+      order: 99;
+
+      @media (min-width: $mediumbp) {
+        order: -1;
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 1.25rem;
+  }
+
+  li + li {
+    margin-top: 0.625rem;
+  }
+
+  p {
+    color: $lightText;
+  }
+
+  a {
+    transition: 0.2s color;
+    color: $lightText;
+
+    &:hover {
+      color: $text;
+    }
+  }
+}
+
+.footer-social {
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

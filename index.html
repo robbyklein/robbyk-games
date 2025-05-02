@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include _home/intro.html %}
+
+<div class="projects">
+  <div class="width">
+    <h3 class="projects__heading sr-only">Projects</h3>
+    <input class="hidden" type="checkbox" id="display-all" />
+
+    <div class="projects__grid">
+      {% for project in site.projects %}
+        {% include _home/project.html %}
+      {% endfor %}
+    </div>
+
+    <label class="projects__view-more" for="display-all">View more</label>
+
+  </div>
+</div>

@@ -1,0 +1,72 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.tech {
+  padding: 6.25rem 0;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.313rem;
+
+    @media (min-width: $largebp) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__marquee {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__slides {
+    display: inline-flex;
+    white-space: nowrap;
+
+    &:after,
+    &:before {
+      height: 100%;
+      width: 4.375rem;
+      content: "";
+      position: absolute;
+      z-index: 2;
+
+      @media (min-width: $largebp) {
+        width: 9.375rem;
+      }
+    }
+
+    &:before {
+      left: 0;
+      background: linear-gradient(to right, #fcfcfc, rgba(255, 255, 255, 0));
+    }
+
+    &:after {
+      right: 0;
+      background: linear-gradient(to left, #fcfcfc, rgba(255, 255, 255, 0));
+    }
+  }
+
+  &__slide {
+    display: inline-flex;
+    align-items: center;
+    gap: 3.125rem;
+    animation: 30s infinite slide linear;
+    padding: 0 1.25rem;
+  }
+
+  &__marquee:hover .tech__slide {
+    animation-play-state: paused;
+  }
+
+  svg {
+    max-width: none;
+    display: inline;
+  }
+}

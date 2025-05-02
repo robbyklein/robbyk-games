@@ -1,0 +1,46 @@
+
+
+<div class="project-card">
+  <div class="project-card__image">
+    <img
+      loading="lazy"
+      src="{{ project.thumbnail | relative_url }}"
+      alt="Utility.uss"
+    />
+  </div>
+  <div class="project-card__text">
+    <ul class="project-card__tags">
+      {% for tag in project.tags %}
+      <li><span class="badge badge--{{ tag | downcase }}">{{ tag }}</span></li>
+      {% endfor %}
+    </ul>
+    <h4 class="project-card__title">{{ project.title }}</h4>
+    <p class="project-card__description">{{ project.description }}</p>
+    <div class="project-card__buttons">
+      {% if project.primaryText %}
+        <a
+          class="button button--primary {% if project.primaryDisabled %}button--disabled{% endif %}"
+          {% unless project.primaryDisabled %}
+            target="_blank"
+            href="{{ project.primaryHref }}"
+          {% endunless %}
+        >
+          {% include _home/project-icon.html icon=project.primaryIcon %}
+          {{ project.primaryText}}
+        </a>
+      {% endif %}
+
+      {% if project.secondaryText %}
+        <a
+          class="button button--secondary"
+          target="_blank"
+          href="{{ project.secondaryHref }}"
+        >
+
+          {% include _home/project-icon.html icon=project.secondaryIcon %}
+          {{ project.secondaryText}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+.badge {
+  font-size: 0.625rem;
+  font-weight: bold;
+  display: inline-flex;
+  color: $black;
+  padding: 0.125rem 0.438rem;
+  text-transform: uppercase;
+  border: 0.0625rem solid $black;
+  border-radius: 6rem;
+
+  &--blue,
+  &--games {
+    background-color: $blue;
+  }
+
+  &--yellow,
+  &--webapps {
+    background-color: $yellow;
+  }
+
+  &--green,
+  &--macos {
+    background-color: $green;
+  }
+
+  &--red,
+  &--tools {
+    background-color: $red;
+  }
+
+  &--orange,
+  &--unity {
+    background-color: $orange;
+  }
+
+  &--purple,
+  &--fullstack {
+    background-color: $purple;
+  }
+
+  &--indigo,
+  &--libraries {
+    background-color: $indigo;
+  }
+
+  &--teal {
+    background-color: $teal;
+  }
+
+  &--cyan,
+  &--nes {
+    background-color: $cyan;
+  }
+
+  &--lime,
+  &--monogame {
+    background-color: $lime;
+  }
+
+  &--gray {
+    background-color: $gray;
+  }
+
+  &--brown {
+    background-color: $brown;
+  }
+}

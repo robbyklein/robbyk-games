@@ -1,0 +1,14 @@
+
+{% if include.icon == 'download' %}
+  {% include _svg/download.html %}
+{% elsif include.icon == 'buy' %}
+  {% include _svg/buy.html %}
+{% elsif include.icon == 'steam' %}
+  {% include _svg/steam.html %}
+{% elsif include.icon == 'github' %}
+  {% include _svg/github.html %}
+{% elsif include.icon == 'unity' %}
+  {% include _svg/unity.html %}
+  {% elsif include.icon == 'play' %}
+    {% include _svg/play.html %}
+{% endif %}

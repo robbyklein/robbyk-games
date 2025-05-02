@@ -1,0 +1,36 @@
+// Colors
+$white: #fcfcfc;
+$black: #0c0c0c;
+$text: #0c0c0c;
+$textHover: #373737;
+$lightText: #5b5b5b;
+$bg: #fcfcfc;
+$primary: #5f6cee;
+$blue: #dbfff6;
+$yellow: #fffebd;
+$green: #e2ffe0;
+$red: #ffd6d6;
+$purple: #eef3fe;
+$orange: #ffdfc7;
+$purple: #f0d9ff;
+$indigo: #e0e4ff; // soft indigo
+$teal: #d6fff7; // soft teal
+$cyan: #d8f9ff; // soft cyan
+$lime: #f2ffcc; // soft lime
+$gray: #eeeeee; // light neutral gray
+$brown: #f1e0d6;
+
+// fonts
+$font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$serif: "Inria Serif", serif;
+
+// Breakpoints
+$smallbp: 37.5rem;
+$mediumbp: 47.5rem;
+$largebp: 60rem;
+$xlargebp: 71.25rem;
+
+// Transitions
+$fadeOff: left 0s 0.2s, opacity 0.2s;
+$fadeOn: left 0s, opacity 0.2s;
